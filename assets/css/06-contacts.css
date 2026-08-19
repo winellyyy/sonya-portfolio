@@ -1,0 +1,50 @@
+.contact-link {
+  z-index: 5;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+  position: absolute;
+  transition: background 0.18s;
+}
+.contact-link:hover {
+  background: #ff008c14;
+}
+.contact-link:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 3px;
+}
+.contact-link-phone {
+  width: 18.611%;
+  height: 0.3293%;
+  top: 97.088%;
+  left: 17.389%;
+}
+.contact-link-max {
+  width: 18.611%;
+  height: 0.3402%;
+  top: 97.498%;
+  left: 17.389%;
+}
+.contact-link-telegram {
+  width: 10.611%;
+  height: 0.3148%;
+  top: 97.919%;
+  left: 17.389%;
+}
+.page-anchor {
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  scroll-margin-top: 74px;
+  position: absolute;
+  left: 0;
+}
+.anchor-about {
+  top: 6.3%;
+}
+.anchor-cases {
+  top: 12.73%;
+}
+.anchor-contacts {
+  top: 95.55%;
+}

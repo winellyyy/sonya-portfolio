@@ -1,0 +1,92 @@
+.site-header {
+  z-index: 100;
+  border-bottom: 1px solid var(--line);
+  background: #08080b;
+  height: 74px;
+  position: sticky;
+  top: 0;
+}
+.header-inner {
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  width: min(100% - 48px, 1400px);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.brand {
+  color: var(--pink);
+  letter-spacing: 0.01em;
+  font-size: 15px;
+  font-weight: 700;
+}
+.desktop-nav {
+  align-items: center;
+  gap: clamp(24px, 4vw, 64px);
+  font-size: 14px;
+  display: flex;
+}
+.desktop-nav a,
+.header-cta {
+  transition:
+    color 0.18s,
+    border-color 0.18s,
+    background 0.18s;
+}
+.desktop-nav a:hover {
+  color: var(--pink-light);
+}
+.header-cta {
+  isolation: isolate;
+  border: 1px solid var(--pink);
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+.header-cta:before,
+.header-cta:after {
+  content: "";
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s;
+  position: absolute;
+  inset: 0;
+}
+.header-cta:before {
+  z-index: 0;
+  background: linear-gradient(115deg, var(--pink) 0%, var(--pink-light) 50%, var(--pink) 100%);
+  background-size: 180% 100%;
+  animation: 3.8s ease-in-out infinite alternate gloss-flow;
+}
+.header-cta:after {
+  z-index: 1;
+  background: linear-gradient(112deg, #0000 24%, #ffffff0a 39%, #ffffff85 50%, #ff69ba33 60%, #0000 76%) 0
+    0/200% 100%;
+  animation: 3.4s ease-in-out infinite alternate gloss-flow;
+}
+.header-cta-label {
+  z-index: 2;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  width: auto;
+  height: 12px;
+  display: block;
+  position: relative;
+}
+.header-cta:hover {
+  background: 0 0;
+}
+.header-cta:hover:before,
+.header-cta:hover:after {
+  opacity: 1;
+}

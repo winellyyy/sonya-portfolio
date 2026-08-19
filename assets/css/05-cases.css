@@ -1,0 +1,47 @@
+.detail-layer {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  z-index: 1;
+  border: 0;
+  margin: 0;
+  display: block;
+  position: absolute;
+}
+.detail-vela {
+  width: 58.3333%;
+  height: 8.48656%;
+  top: 22.7396%;
+  left: 41.6667%;
+}
+.detail-razdacha {
+  width: 51.6667%;
+  height: 9.35698%;
+  top: 31.7702%;
+  left: 3.33333%;
+}
+.detail-synth {
+  width: 56.6667%;
+  height: 9.03057%;
+  top: 45.1529%;
+  left: 43.3333%;
+}
+.detail-mebel {
+  width: 55%;
+  height: 7.61615%;
+  top: 56.0331%;
+  left: 0;
+}
+.detail-bonton {
+  width: 58.3333%;
+  height: 9.24818%;
+  top: 69.0893%;
+  left: 41.6667%;
+}
+.detail-shturman {
+  width: 53.3333%;
+  height: 7.18094%;
+  top: 81.8192%;
+  left: 3.33333%;
+}
