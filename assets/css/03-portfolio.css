@@ -1,0 +1,33 @@
+.portfolio-canvas {
+  background: var(--black);
+  width: 100%;
+  margin: 0 auto;
+  line-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-canvas:before {
+  content: "";
+  z-index: 4;
+  background: var(--black);
+  pointer-events: none;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.portfolio-chunk {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  border: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+.portfolio-chunk + .portfolio-chunk {
+  margin-top: -1px;
+}

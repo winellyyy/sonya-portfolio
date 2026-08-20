@@ -1,0 +1,108 @@
+.about-backdrop {
+  z-index: 1;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  width: 55.5556%;
+  height: 4.35229%;
+  display: block;
+  position: absolute;
+  top: 7.97921%;
+  left: 22.7778%;
+}
+.about-card {
+  z-index: 2;
+  /* без drop-shadow: тень карточек уже нарисована на полотне 01.jpg */
+  transform-origin: 50%;
+  line-height: 0;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: block;
+  position: absolute;
+  transform: translate(0) scale(1);
+}
+.about-card:after {
+  content: "";
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.62;
+  background: linear-gradient(
+      112deg,
+      #0000 16%,
+      #ff008c0a 34%,
+      #ff69ba2e 48%,
+      #ffffff1a 54%,
+      #ff008c12 67%,
+      #0000 84%
+    )
+    0 0/230% 100%;
+  transition: opacity 0.22s;
+  animation: 7.2s ease-in-out infinite alternate gloss-flow;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-position: 50%;
+  mask-position: 50%;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-source-type: alpha;
+  mask-mode: alpha;
+}
+.about-card img {
+  z-index: 0;
+  image-rendering: auto;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.about-card-skills {
+  width: 17.4167%;
+  height: 3.41552%;
+  top: 8.55693%;
+  left: 24.4444%;
+}
+.about-card-skills:after {
+  animation-delay: -0.8s;
+  -webkit-mask-image: url(../img/skills.png);
+  mask-image: url(../img/skills.png);
+}
+.about-card-experience {
+  z-index: 3;
+  width: 18.75%;
+  height: 3.80711%;
+  top: 8.16896%;
+  left: 40.5%;
+}
+.about-card-experience:after {
+  animation-delay: -3.1s;
+  -webkit-mask-image: url(../img/experience.png);
+  mask-image: url(../img/experience.png);
+}
+.about-card-education {
+  width: 17.7222%;
+  height: 3.51704%;
+  top: 8.48803%;
+  left: 57.9444%;
+}
+.about-card-education:after {
+  animation-delay: -5.2s;
+  -webkit-mask-image: url(../img/education.png);
+  mask-image: url(../img/education.png);
+}
+@media (hover: hover) and (pointer: fine) {
+  .about-card:hover {
+    transform: translate(0) scale(1.008);
+  }
+  .about-card:hover:after {
+    opacity: 0.9;
+  }
+  .about-card-experience:hover {
+    z-index: 4;
+  }
+}

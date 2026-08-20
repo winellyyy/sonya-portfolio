@@ -1,0 +1,35 @@
+@media (width<=820px) {
+  html {
+    scroll-padding-top: 64px;
+  }
+  .site-header {
+    height: 64px;
+  }
+  .header-inner {
+    width: min(100% - 28px, 720px);
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .header-cta {
+    min-height: 40px;
+    padding: 7px 14px;
+  }
+  .page-anchor {
+    scroll-margin-top: 64px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .about-card:hover {
+    transform: translate(0) scale(1);
+  }
+  *,
+  :before,
+  :after {
+    transition-duration: 0.01ms !important;
+    animation: none !important;
+  }
+}
