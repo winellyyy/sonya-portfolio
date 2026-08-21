@@ -59,8 +59,8 @@
   z-index: 0;
   color: var(--surface, #08080b);
   text-shadow:
-    0 0 0.07cqw var(--surface, #08080b),
-    0 0 0.12cqw var(--surface, #08080b);
+    0 0 0.1cqw var(--surface, #08080b),
+    0 0 0.18cqw var(--surface, #08080b);
   pointer-events: none;
 }
 
@@ -109,7 +109,7 @@
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.08em;
-  transform: scaleX(0.81);
+  transform: scaleX(0.831);
   transform-origin: left top;
 }
 
@@ -145,7 +145,7 @@
 
 .hero-title-ux {
   left: 0;
-  transform: scaleX(0.815);
+  transform: scaleX(0.793);
 }
 
 .hero-title-role {
@@ -159,9 +159,11 @@
   left: 62.55%;
   width: 28.5%;
   color: #fff;
-  font-size: 1.04cqw;
+  font-size: 1.12cqw;
   font-weight: 500;
   line-height: 1.2;
+  transform: scaleX(1.02);
+  transform-origin: left top;
 }
 
 .hero-copy .semantic-button {
