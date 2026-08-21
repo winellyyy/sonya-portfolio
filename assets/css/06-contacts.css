@@ -1,50 +1,118 @@
-.contact-link {
-  z-index: 5;
-  cursor: pointer;
-  border-radius: 12px;
+.contacts {
+  min-height: 620px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.contacts__inner {
+  min-height: inherit;
+  display: grid;
+  grid-template-columns: minmax(420px, 0.9fr) minmax(420px, 1.1fr);
+  align-items: center;
+  gap: 50px;
+}
+
+.contacts__content {
+  z-index: 3;
+  padding-block: 70px;
+}
+
+.contacts__content h2 {
+  font-size: clamp(42px, 5.2vw, 78px);
+  font-weight: 820;
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+.contacts__list {
+  margin-top: clamp(32px, 3.8vw, 58px);
+  display: grid;
+  gap: 18px;
+  font-style: normal;
+}
+
+.contacts__list a {
+  width: max-content;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: clamp(19px, 2.2vw, 31px);
+  font-weight: 560;
+  line-height: 1.15;
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.contacts__list a span {
+  width: 34px;
+  color: var(--pink);
+  text-align: center;
+}
+
+.contacts__list a:hover {
+  color: var(--pink);
+  transform: translateX(4px);
+}
+
+.contacts__content .button {
+  margin-top: clamp(38px, 4vw, 62px);
+}
+
+.contacts__portrait {
+  align-self: end;
+  justify-self: center;
+  width: min(46vw, 710px);
+  height: min(620px, 45vw);
+  position: relative;
+  line-height: 0;
+}
+
+.contacts__portrait::before {
+  content: "";
+  z-index: 0;
+  width: 84%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 2%;
+  bottom: -22%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 0, 140, 0.19), transparent 68%);
+  filter: blur(24px);
+}
+
+.contacts__portrait img {
+  z-index: 2;
+  width: auto;
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  right: -2%;
+  bottom: 0;
   display: block;
-  position: absolute;
-  transition: background 0.18s;
+  filter: drop-shadow(0 22px 30px rgba(63, 0, 31, 0.14));
 }
-.contact-link:hover {
-  background: #ff008c14;
+
+.orbit--contacts {
+  z-index: 1;
+  width: 80%;
+  height: 118%;
+  right: 0;
+  bottom: -40%;
+  transform: rotate(13deg);
 }
-.contact-link:focus-visible {
-  outline: 2px solid var(--pink);
-  outline-offset: 3px;
+
+.spark--contacts-large {
+  top: 6%;
+  left: 20%;
+  font-size: 36px;
 }
-.contact-link-phone {
-  width: 18.611%;
-  height: 0.3293%;
-  top: 97.088%;
-  left: 17.389%;
-}
-.contact-link-max {
-  width: 18.611%;
-  height: 0.3402%;
-  top: 97.498%;
-  left: 17.389%;
-}
-.contact-link-telegram {
-  width: 10.611%;
-  height: 0.3148%;
-  top: 97.919%;
-  left: 17.389%;
-}
-.page-anchor {
-  pointer-events: none;
-  width: 1px;
-  height: 1px;
-  scroll-margin-top: 74px;
-  position: absolute;
-  left: 0;
-}
-.anchor-about {
-  top: 6.3%;
-}
-.anchor-cases {
-  top: 12.73%;
-}
-.anchor-contacts {
-  top: 95.55%;
+
+.spark--contacts-small {
+  top: 15%;
+  left: 24%;
+  color: var(--pink);
+  font-size: 18px;
 }

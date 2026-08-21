@@ -1,35 +1,313 @@
-@media (width<=820px) {
-  html {
-    scroll-padding-top: 64px;
+@media (max-width: 1100px) {
+  .hero__identity {
+    left: 0;
   }
+
+  .hero__content {
+    right: 0;
+  }
+
+  .case-study__inner {
+    grid-template-columns: minmax(300px, 0.9fr) minmax(430px, 1.1fr);
+    gap: 42px;
+  }
+
+  .fact-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-height: 64px;
+  }
+
   .site-header {
-    height: 64px;
+    height: var(--header-height);
   }
+
   .header-inner {
-    width: min(100% - 28px, 720px);
+    width: min(100% - 28px, 820px);
   }
+
   .desktop-nav {
     display: none;
   }
+
   .header-cta {
     min-height: 40px;
     padding: 7px 14px;
   }
-  .page-anchor {
-    scroll-margin-top: 64px;
+
+  .hero {
+    min-height: 790px;
+  }
+
+  .hero__identity {
+    top: 8%;
+  }
+
+  .hero__portrait {
+    width: min(48vw, 450px);
+    left: 45%;
+  }
+
+  .hero__content {
+    width: 39%;
+    bottom: 12%;
+  }
+
+  .fact-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 650px;
+    margin-inline: auto;
+    gap: 28px;
+  }
+
+  .fact-card,
+  .fact-card--experience {
+    min-height: 0;
+  }
+
+  .fact-card--skills,
+  .fact-card--education {
+    transform: none;
+  }
+
+  .about__bloom {
+    width: clamp(300px, 52vw, 460px);
+  }
+
+  .case-study__inner {
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 54px;
+  }
+
+  .case-study--media-left .case-study__copy,
+  .case-study--media-left .case-study__media {
+    order: initial;
+  }
+
+  .case-study__copy {
+    max-width: 690px;
+    margin-inline: auto;
+  }
+
+  .case-study__media {
+    width: min(100%, 760px);
+    margin-inline: auto;
+  }
+
+  .case-study__media img {
+    max-height: none;
+  }
+
+  .case-study__media--berry img {
+    max-height: 690px;
+  }
+
+  .contacts {
+    min-height: 840px;
+  }
+
+  .contacts__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .contacts__content {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .contacts__portrait {
+    width: min(86vw, 670px);
+    height: 470px;
   }
 }
+
+@media (max-width: 680px) {
+  .section-shell {
+    width: min(100% - 32px, var(--shell));
+  }
+
+  .brand {
+    font-size: 13px;
+  }
+
+  .header-cta {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 820px;
+  }
+
+  .hero__identity {
+    width: 100%;
+    top: 7%;
+    left: 0;
+  }
+
+  .hero__name {
+    font-size: clamp(58px, 20vw, 86px);
+  }
+
+  .hero__wordmark {
+    font-size: clamp(62px, 21vw, 92px);
+    white-space: normal;
+  }
+
+  .hero__portrait {
+    width: min(68vw, 390px);
+    bottom: 0;
+    left: 62%;
+    opacity: 0.88;
+  }
+
+  .hero__content {
+    width: 78%;
+    right: auto;
+    bottom: 10%;
+    left: 0;
+  }
+
+  .hero__content h1 {
+    font-size: clamp(34px, 10vw, 48px);
+  }
+
+  .hero__content > p {
+    max-width: 340px;
+    padding-right: 36px;
+    font-size: 15px;
+  }
+
+  .hero__content .button {
+    margin-top: 26px;
+  }
+
+  .about {
+    padding-top: 70px;
+  }
+
+  .about__heading {
+    margin-bottom: 76px;
+  }
+
+  .about__heading p {
+    margin-right: -8%;
+  }
+
+  .about__bloom {
+    width: 310px;
+    top: 118px;
+    opacity: 0.72;
+  }
+
+  .about__bloom--left {
+    left: -185px;
+  }
+
+  .about__bloom--right {
+    right: -185px;
+  }
+
+  .fact-card {
+    padding: 28px 24px;
+    border-radius: 32px;
+  }
+
+  .cases-intro__inner {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .section-index {
+    flex: 0 0 auto;
+    width: 58px;
+  }
+
+  .cases-intro h2 {
+    font-size: clamp(30px, 9vw, 42px);
+  }
+
+  .cases-intro__inner > div > p {
+    font-size: 17px;
+  }
+
+  .case-study__inner {
+    padding-block: 72px;
+    gap: 42px;
+  }
+
+  .case-study__header {
+    margin-bottom: 44px;
+  }
+
+  .case-study__header h3 {
+    gap: 10px;
+    font-size: clamp(27px, 8vw, 38px);
+  }
+
+  .case-role {
+    margin-bottom: 44px;
+  }
+
+  .case-point {
+    margin-top: 42px;
+    padding: 26px 20px;
+    border-radius: 38px;
+  }
+
+  .case-point h4 {
+    margin-top: -2.05em;
+  }
+
+  .case-study__media img {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 2%, #000 98%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 2%, #000 98%, transparent 100%);
+  }
+
+  .case-study__media--berry img {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .contacts {
+    min-height: 790px;
+  }
+
+  .contacts__content h2 {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .contacts__list a {
+    gap: 10px;
+    font-size: 19px;
+  }
+
+  .contacts__portrait {
+    width: 100%;
+    height: 390px;
+  }
+
+  .contacts__portrait img {
+    right: -34%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-  .about-card:hover {
-    transform: translate(0) scale(1);
-  }
+
   *,
-  :before,
-  :after {
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
-    animation: none !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

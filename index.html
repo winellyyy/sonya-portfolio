@@ -1,20 +1,19 @@
 <!doctype html>
-<!-- saved from url=(0060)https://sonya-portfolio.fairy-guppy-6688.chatgpt.site/#cases -->
 <html lang="ru">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" href="./assets/img/01.jpg" as="image" fetchpriority="high" />
-    <link rel="preload" href="./assets/img/header-contact-label.png" as="image" />
-    <link rel="preload" href="./assets/img/02.jpg" as="image" fetchpriority="auto" />
-    <link rel="preload" href="./assets/img/03.jpg" as="image" fetchpriority="auto" />
-    <link rel="preload" href="./assets/img/04.jpg" as="image" fetchpriority="auto" />
-    <link rel="preload" href="./assets/img/05.jpg" as="image" fetchpriority="auto" />
-    <link rel="preload" href="./assets/img/backdrop.png" as="image" />
-    <link rel="preload" href="./assets/img/skills.png" as="image" />
-    <link rel="preload" href="./assets/img/experience.png" as="image" />
-    <link rel="preload" href="./assets/img/education.png" as="image" />
-    <!-- Стили: порядок подключения важен (каскад) -->
+    <meta name="theme-color" content="#08080b" />
+    <meta
+      name="description"
+      content="Портфолио UX/UI и веб-дизайнера Сони. Сайты, интерфейсы и визуальные концепции."
+    />
+    <title>Sonya — UX/UI Designer</title>
+
+    <link rel="preload" href="./assets/img/hero-person.webp" as="image" fetchpriority="high" />
+    <link rel="preload" href="./assets/media/flower-bloom-poster.webp" as="image" />
+    <link rel="preload" href="./assets/img/device-berry.webp" as="image" />
+
     <link rel="stylesheet" href="./assets/css/00-reset.css" />
     <link rel="stylesheet" href="./assets/css/01-base.css" />
     <link rel="stylesheet" href="./assets/css/02-header.css" />
@@ -24,241 +23,476 @@
     <link rel="stylesheet" href="./assets/css/06-contacts.css" />
     <link rel="stylesheet" href="./assets/css/07-buttons.css" />
     <link rel="stylesheet" href="./assets/css/08-responsive.css" />
-    <link rel="preload" href="./assets/img/device-vela.webp" as="image" />
-    <link rel="preload" href="./assets/img/device-razdacha.webp" as="image" />
-    <link rel="preload" href="./assets/img/device-synth.webp" as="image" />
-    <link rel="preload" href="./assets/img/device-mebel.webp" as="image" />
-    <link rel="preload" href="./assets/img/device-bonton.webp" as="image" />
-    <link rel="preload" href="./assets/img/device-shturman.webp" as="image" />
-    <link rel="preload" href="./assets/img/hero-hover-content.png" as="image" />
-    <link rel="preload" href="./assets/img/footer-hover-content.png" as="image" />
-    <title>Sonya — UX/UI Designer</title>
-    <meta
-      name="description"
-      content="Портфолио UX/UI и веб-дизайнера Сони. Сайты, интерфейсы и визуальные концепции."
-    />
-    <link rel="shortcut icon" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.svg" />
-    <meta name="codex-preview" content="development" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Перейти в начало страницы">prod. winellyy</a>
+        <nav class="desktop-nav" aria-label="Основная навигация">
+          <a href="#about">Обо мне</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <a
+          class="header-cta"
+          href="https://t.me/winellyy"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Написать в Telegram @winellyy"
+          >Написать мне <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+
     <main>
-      <header class="site-header">
-        <div class="header-inner">
-          <a class="brand" href="#top" aria-label="Перейти в начало страницы">prod. winellyy</a>
-          <nav class="desktop-nav" aria-label="Основная навигация">
-            <a href="#about">Обо мне</a><a href="#cases">Кейсы</a><a href="#contacts">Контакты</a>
-          </nav>
-          <a
-            class="header-cta"
-            href="https://t.me/winellyy"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Написать в Telegram @winellyy"
-            title="Telegram @winellyy"
-            ><img
-              class="header-cta-label"
-              src="./assets/img/header-contact-label.png"
-              width="479"
-              height="59"
+      <section class="hero section-dark section-texture" id="top" aria-labelledby="hero-title">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="section-shell hero__inner">
+          <div class="hero__identity" aria-label="Sonya Portfolio">
+            <p class="hero__name">Sonya</p>
+            <p class="hero__wordmark" aria-hidden="true">PORTFOLIO</p>
+          </div>
+
+          <div class="hero__portrait" aria-hidden="true">
+            <span class="orbit orbit--hero"></span>
+            <span class="spark spark--large">★</span>
+            <span class="spark spark--small">★</span>
+            <img
+              src="./assets/img/hero-person.webp"
+              width="501"
+              height="895"
               alt=""
-              aria-hidden="true"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
               draggable="false"
-          /></a>
+            />
+          </div>
+
+          <div class="hero__content">
+            <h1 id="hero-title"><span>UX/UI</span> дизайнер</h1>
+            <p>Создаю интерфейсы и графику, которые увеличивают заявки и продажи</p>
+            <a class="button button--pink" href="#cases"
+              >Смотреть работы <span aria-hidden="true">→</span></a
+            >
+          </div>
         </div>
-      </header>
-      <section class="portfolio-canvas" id="top" aria-label="Портфолио UX/UI дизайнера Сони">
-        <span class="page-anchor anchor-about" id="about" aria-hidden="true"></span
-        ><span class="page-anchor anchor-cases" id="cases" aria-hidden="true"></span
-        ><span class="page-anchor anchor-contacts" id="contacts" aria-hidden="true"></span
-        ><img
-          class="portfolio-chunk"
-          src="./assets/img/01.jpg"
-          width="3600"
-          height="7007"
-          alt="Портфолио UX/UI и веб-дизайнера Сони"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="portfolio-chunk"
-          src="./assets/img/02.jpg"
-          width="3600"
-          height="6439"
-          alt=""
-          loading="eager"
-          fetchpriority="auto"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="portfolio-chunk"
-          src="./assets/img/03.jpg"
-          width="3600"
-          height="6458"
-          alt=""
-          loading="eager"
-          fetchpriority="auto"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="portfolio-chunk"
-          src="./assets/img/04.jpg"
-          width="3600"
-          height="6448"
-          alt=""
-          loading="eager"
-          fetchpriority="auto"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="portfolio-chunk"
-          src="./assets/img/05.jpg"
-          width="3600"
-          height="1228"
-          alt=""
-          loading="eager"
-          fetchpriority="auto"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="about-backdrop"
-          src="./assets/img/backdrop.png"
-          width="2000"
-          height="1200"
-          alt=""
-          aria-hidden="true"
-          loading="eager"
-          decoding="async"
-          draggable="false"
-        /><span class="about-card about-card-skills" aria-hidden="true"
-          ><img
-            src="./assets/img/skills.png"
-            width="627"
-            height="942"
-            alt=""
-            loading="eager"
-            decoding="async"
-            draggable="false" /></span
-        ><span class="about-card about-card-experience" aria-hidden="true"
-          ><img
-            src="./assets/img/experience.png"
-            width="675"
-            height="1050"
-            alt=""
-            loading="eager"
-            decoding="async"
-            draggable="false" /></span
-        ><span class="about-card about-card-education" aria-hidden="true"
-          ><img
-            src="./assets/img/education.png"
-            width="638"
-            height="970"
-            alt=""
-            loading="eager"
-            decoding="async"
-            draggable="false" /></span
-        ><img
-          class="detail-layer detail-vela"
-          src="./assets/img/device-vela.webp"
-          width="4200"
-          height="4680"
-          alt=""
-          loading="eager"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="detail-layer detail-razdacha"
-          src="./assets/img/device-razdacha.webp"
-          width="3720"
-          height="5160"
-          alt=""
-          loading="eager"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="detail-layer detail-synth"
-          src="./assets/img/device-synth.webp"
-          width="4080"
-          height="4980"
-          alt=""
-          loading="eager"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="detail-layer detail-mebel"
-          src="./assets/img/device-mebel.webp"
-          width="3960"
-          height="4200"
-          alt=""
-          loading="eager"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="detail-layer detail-bonton"
-          src="./assets/img/device-bonton.webp"
-          width="4200"
-          height="5100"
-          alt=""
-          loading="eager"
-          decoding="async"
-          draggable="false"
-        /><img
-          class="detail-layer detail-shturman"
-          src="./assets/img/device-shturman.webp"
-          width="3840"
-          height="3960"
-          alt=""
-          loading="eager"
-          decoding="async"
-          draggable="false"
-        /><a class="hero-work-link" href="#cases" aria-label="Смотреть кейсы"
-          ><img
-            class="button-hover-content"
-            src="./assets/img/hero-hover-content.png"
-            width="721"
-            height="125"
-            alt=""
-            aria-hidden="true"
-            draggable="false" /></a
-        ><a
-          class="contact-link contact-link-phone"
-          href="tel:+79954130049"
-          aria-label="Позвонить: +7 (995) 413-00-49"
-        ></a
-        ><a
-          class="contact-link contact-link-max"
-          href="https://max.ru/+79954130049"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Написать в MAX: +7 (995) 413-00-49"
-        ></a
-        ><a
-          class="contact-link contact-link-telegram"
-          href="https://t.me/winellyy"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Написать в Telegram: @winellyy"
-        ></a
-        ><a
-          class="contact-hotspot"
-          href="https://t.me/winellyy"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Обсудить проект в Telegram @winellyy"
-          ><img
-            class="button-hover-content"
-            src="./assets/img/footer-hover-content.png"
-            width="711"
-            height="125"
-            alt=""
-            aria-hidden="true"
-            draggable="false"
-        /></a>
       </section>
-      <a class="back-to-cases" href="#cases" aria-label="Вернуться к началу кейсов" title="К началу кейсов"
-        ><span aria-hidden="true">↑</span></a
-      >
+
+      <section class="about section-light section-texture" id="about" aria-labelledby="about-title">
+        <div class="about__bloom about__bloom--left" aria-hidden="true">
+          <video
+            class="about__bloom-video"
+            muted
+            playsinline
+            preload="auto"
+            poster="./assets/media/flower-bloom-poster.webp"
+            disablepictureinpicture
+            disableremoteplayback
+            tabindex="-1"
+          >
+            <source src="./assets/media/flower-bloom.webm" type="video/webm" />
+            <source src="./assets/media/flower-bloom.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="about__bloom about__bloom--right" aria-hidden="true">
+          <video
+            class="about__bloom-video"
+            muted
+            playsinline
+            preload="auto"
+            poster="./assets/media/flower-bloom-poster.webp"
+            disablepictureinpicture
+            disableremoteplayback
+            tabindex="-1"
+          >
+            <source src="./assets/media/flower-bloom.webm" type="video/webm" />
+            <source src="./assets/media/flower-bloom.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="section-shell about__inner">
+          <header class="about__heading">
+            <h2 id="about-title">обо мне</h2>
+            <p>несколько фактов</p>
+          </header>
+
+          <div class="fact-grid" aria-label="Навыки, опыт и образование">
+            <article class="fact-card fact-card--skills">
+              <div class="fact-card__header">
+                <h3>Навыки</h3>
+                <span class="fact-card__icon" aria-hidden="true">🎨</span>
+              </div>
+              <ul>
+                <li>UX/UI и веб-дизайн</li>
+                <li>UI Kit / библиотеки компонентов</li>
+                <li>Графический и печатный дизайн</li>
+                <li>AI-инструменты в работе</li>
+              </ul>
+              <p class="fact-card__note">
+                Проектирую цифровые продукты и создаю графику для онлайн- и офлайн-коммуникаций
+              </p>
+            </article>
+
+            <article class="fact-card fact-card--experience">
+              <div class="fact-card__header">
+                <h3>Опыт<br />работы</h3>
+                <span class="fact-card__icon" aria-hidden="true">📋</span>
+              </div>
+              <dl class="fact-card__stats">
+                <div>
+                  <dt>1 год</dt>
+                  <dd>UX/UI &amp; web design</dd>
+                </div>
+                <div>
+                  <dt>1,5 года</dt>
+                  <dd>Graphic design</dd>
+                </div>
+              </dl>
+              <p class="fact-card__note">От интерфейсов и сайтов до рекламных материалов</p>
+            </article>
+
+            <article class="fact-card fact-card--education">
+              <div class="fact-card__header">
+                <h3>Учеба</h3>
+                <span class="fact-card__icon" aria-hidden="true">📚</span>
+              </div>
+              <dl class="fact-card__education">
+                <div>
+                  <dt>Окончила МАП</dt>
+                  <dd>По направлению «Дизайн»</dd>
+                </div>
+                <div>
+                  <dt>Поступила в МАП</dt>
+                  <dd>По направлению Full-stack-разработка</dd>
+                </div>
+              </dl>
+              <p class="fact-card__note">
+                Освоила основы композиции, типографики и визуальных коммуникаций
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases" id="cases" aria-labelledby="cases-title">
+        <header class="cases-intro section-dark section-texture">
+          <div class="section-shell cases-intro__inner">
+            <p class="section-index">01</p>
+            <div>
+              <h2 id="cases-title">UX/UI &amp; web дизайн</h2>
+              <p>Проектирую сайты с фокусом на задачу бизнеса и путь пользователя</p>
+            </div>
+          </div>
+        </header>
+
+        <article class="case-study case-study--dark case-study--media-left" aria-labelledby="case-berry-title">
+          <div class="section-shell case-study__inner">
+            <div class="case-study__copy">
+              <header class="case-study__header">
+                <h3 id="case-berry-title"><span>01</span> Berry Bliss</h3>
+                <p>Лендинг для бренда клубники в шоколаде: каталог наборов и быстрый заказ.</p>
+              </header>
+              <div class="case-role"><strong>Роль:</strong><span>UX/UI-Дизайнер</span></div>
+              <div class="case-point">
+                <h4>Задача:</h4>
+                <p>
+                  Передать ощущение премиального подарка, помочь пользователю выбрать набор и сократить
+                  путь от знакомства с продуктом до заявки.
+                </p>
+              </div>
+              <div class="case-point">
+                <h4>Что было сделано:</h4>
+                <p>
+                  Сайт выстроен так, чтобы продукт сразу вызывал желание купить, а выбор набора не
+                  требовал долгого изучения. Продумала структуру каталога и путь к заказу, объединила
+                  эмоциональную продуктовую подачу с понятной навигацией.
+                </p>
+              </div>
+            </div>
+            <figure class="case-study__media case-study__media--berry">
+              <img
+                src="./assets/img/device-berry.webp"
+                width="2785"
+                height="2622"
+                alt="Мокап сайта Berry Bliss на ноутбуке и телефоне"
+                loading="eager"
+                decoding="async"
+                draggable="false"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <article class="case-study case-study--light" aria-labelledby="case-vela-title">
+          <div class="section-shell case-study__inner">
+            <div class="case-study__copy">
+              <header class="case-study__header">
+                <h3 id="case-vela-title"><span>02</span> Vela estate</h3>
+                <p>Сайт агентства недвижимости для подбора объектов и привлечения инвесторов</p>
+              </header>
+              <div class="case-role"><strong>Роль:</strong><span>UX/UI-Дизайнер</span></div>
+              <div class="case-point">
+                <h4>Задача:</h4>
+                <p>
+                  Усилить доверие к агентству, показать инвестиционную ценность объектов и привести
+                  пользователя к консультации или просмотру каталога.
+                </p>
+              </div>
+              <div class="case-point">
+                <h4>Что было сделано:</h4>
+                <p>
+                  Сайт задуман как спокойный экспертный диалог с человеком, который выбирает недвижимость
+                  для жизни или инвестиций. Я выстроила подачу от первого интереса к пониманию ценности
+                  объекта и доверию к агентству.
+                </p>
+              </div>
+            </div>
+            <figure class="case-study__media">
+              <img
+                src="./assets/img/case-vela.webp"
+                width="3400"
+                height="4400"
+                alt="Адаптивный дизайн сайта Vela estate"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <article class="case-study case-study--dark case-study--media-left" aria-labelledby="case-razdacha-title">
+          <div class="section-shell case-study__inner">
+            <div class="case-study__copy">
+              <header class="case-study__header">
+                <h3 id="case-razdacha-title"><span>03</span> Раздачка</h3>
+                <p>Редизайн лендинга сервиса для запуска кешбэк-акций на маркетплейсах</p>
+              </header>
+              <div class="case-role"><strong>Роль:</strong><span>UX/UI-Дизайнер</span></div>
+              <div class="case-point">
+                <h4>Задача:</h4>
+                <p>
+                  Быстро объяснить механику сервиса, показать выгоды для продавцов и привести пользователя
+                  к пробному запуску.
+                </p>
+              </div>
+              <div class="case-point">
+                <h4>Что было сделано:</h4>
+                <p>
+                  Редизайн превратил сложную презентацию сервиса в понятный путь от знакомства с продуктом
+                  до пробного запуска. Переосмыслила структуру лендинга, разделила сценарии по ролям и
+                  упростила подачу механики, преимуществ и тарифов, а также сопровождала проект до передачи
+                  адаптивных макетов в разработку.
+                </p>
+              </div>
+            </div>
+            <figure class="case-study__media">
+              <img
+                src="./assets/img/case-razdacha.webp"
+                width="3500"
+                height="4200"
+                alt="Адаптивный дизайн сервиса Раздачка"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <article class="case-study case-study--light" aria-labelledby="case-synth-title">
+          <div class="section-shell case-study__inner">
+            <div class="case-study__copy">
+              <header class="case-study__header">
+                <h3 id="case-synth-title"><span>04</span> Synth VR</h3>
+                <p>Сайт VR-клуба с каталогом сценариев и онлайн-бронированием.</p>
+              </header>
+              <div class="case-role"><strong>Роль:</strong><span>UX/UI-Дизайнер</span></div>
+              <div class="case-point">
+                <h4>Задача:</h4>
+                <p>
+                  Передать эмоции VR, помочь выбрать игру по жанру и поводу и сделать бронирование понятным
+                  на любом устройстве.
+                </p>
+              </div>
+              <div class="case-point">
+                <h4>Что было сделано:</h4>
+                <p>
+                  Я объединила эмоциональную атмосферу VR-клуба с понятной логикой выбора и бронирования.
+                  Продумала структуру сайта, пользовательские сценарии и визуальную концепцию.
+                </p>
+              </div>
+            </div>
+            <figure class="case-study__media">
+              <img
+                src="./assets/img/case-synth.webp"
+                width="3700"
+                height="4000"
+                alt="Адаптивный дизайн сайта Synth VR"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <article class="case-study case-study--dark case-study--media-left" aria-labelledby="case-mebel-title">
+          <div class="section-shell case-study__inner">
+            <div class="case-study__copy">
+              <header class="case-study__header">
+                <h3 id="case-mebel-title"><span>05</span> Мебель Молл</h3>
+                <p>Продающий редизайн многостраничного сайта мебельного магазина</p>
+              </header>
+              <div class="case-role"><strong>Роль:</strong><span>UX/UI-Дизайнер</span></div>
+              <div class="case-point">
+                <h4>Задача:</h4>
+                <p>
+                  Объединить товары и магазины в понятной структуре, упростить навигацию по ассортименту и
+                  сократить путь к покупке или посещению мебельного центра.
+                </p>
+              </div>
+              <div class="case-point">
+                <h4>Что было сделано:</h4>
+                <p>
+                  Редизайн превратил устаревший сайт-витрину в понятный инструмент выбора и покупки мебели.
+                  Я переосмыслила пользовательский путь, структуру каталога и визуальный стиль, а также
+                  сопровождала проект от согласования решений с клиентом до передачи макетов в разработку.
+                </p>
+              </div>
+            </div>
+            <figure class="case-study__media">
+              <img
+                src="./assets/img/case-mebel.webp"
+                width="3500"
+                height="3400"
+                alt="Адаптивный дизайн сайта Мебель Молл"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <article class="case-study case-study--light" aria-labelledby="case-bonton-title">
+          <div class="section-shell case-study__inner">
+            <div class="case-study__copy">
+              <header class="case-study__header">
+                <h3 id="case-bonton-title"><span>06</span> Bonton</h3>
+                <p>Редизайн сайта салона красоты с акцентом на уют и доверие</p>
+              </header>
+              <div class="case-role"><strong>Роль:</strong><span>UX/UI-Дизайнер</span></div>
+              <div class="case-point">
+                <h4>Задача:</h4>
+                <p>
+                  Упростить выбор услуги, усилить доверие к салону и привести пользователя к онлайн-записи
+                  через понятный адаптивный сценарий.
+                </p>
+              </div>
+              <div class="case-point">
+                <h4>Что было сделано:</h4>
+                <p>
+                  Редизайн выстроен вокруг главного действия — записи в салон. Я собрала понятный путь от
+                  знакомства с брендом до выбора услуги, усилила доверие через портфолио мастеров и
+                  атмосферную подачу, а акции встроила в сценарий без перегруза.
+                </p>
+              </div>
+            </div>
+            <figure class="case-study__media">
+              <img
+                src="./assets/img/case-bonton.webp"
+                width="3600"
+                height="4100"
+                alt="Адаптивный дизайн сайта салона Bonton"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <article class="case-study case-study--dark case-study--media-left" aria-labelledby="case-shturman-title">
+          <div class="section-shell case-study__inner">
+            <div class="case-study__copy">
+              <header class="case-study__header">
+                <h3 id="case-shturman-title"><span>07</span> Штурман Тур</h3>
+                <p>Редизайн многостраничного сайта сервиса экскурсий по Волгограду</p>
+              </header>
+              <div class="case-role"><strong>Роль:</strong><span>UX/UI-Дизайнер</span></div>
+              <div class="case-point">
+                <h4>Задача:</h4>
+                <p>
+                  Упростить выбор экскурсии, помочь сравнить маршруты, быстро увидеть условия поездки и
+                  перейти к расписанию или бронированию с любого устройства.
+                </p>
+              </div>
+              <div class="case-point">
+                <h4>Что было сделано:</h4>
+                <p>
+                  Сайт выстроен вокруг выбора маршрута, экскурсии собраны в понятные карточки, важные
+                  условия и преимущества вынесены на первый план. Я продумала переход от знакомства с
+                  программой к расписанию и бронированию.
+                </p>
+              </div>
+            </div>
+            <figure class="case-study__media">
+              <img
+                src="./assets/img/case-shturman.webp"
+                width="3450"
+                height="3300"
+                alt="Адаптивный дизайн сайта Штурман Тур"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section class="contacts section-light section-texture" id="contacts" aria-labelledby="contacts-title">
+        <div class="section-shell contacts__inner">
+          <div class="contacts__content">
+            <h2 id="contacts-title">Ваш продукт достоин<br />сильного дизайна!</h2>
+            <address class="contacts__list">
+              <a href="tel:+79954130049"><span aria-hidden="true">☎</span>+7 (995) 413-00-49</a>
+              <a href="https://max.ru/+79954130049" target="_blank" rel="noreferrer"
+                ><span aria-hidden="true">●</span>+7 (995) 413-00-49</a
+              >
+              <a href="https://t.me/winellyy" target="_blank" rel="noreferrer"
+                ><span aria-hidden="true">➤</span>@winellyy</a
+              >
+            </address>
+            <a class="button button--pink" href="https://t.me/winellyy" target="_blank" rel="noreferrer"
+              >Обсудить проект <span aria-hidden="true">→</span></a
+            >
+          </div>
+
+          <div class="contacts__portrait" aria-hidden="true">
+            <span class="orbit orbit--contacts"></span>
+            <span class="spark spark--contacts-large">★</span>
+            <span class="spark spark--contacts-small">★</span>
+            <img
+              src="./assets/img/contact-person.webp"
+              width="742"
+              height="845"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <a class="back-to-cases" href="#cases" aria-label="Вернуться к началу кейсов" title="К началу кейсов">
+        <span aria-hidden="true">↑</span>
+      </a>
     </main>
+
+    <script src="./assets/js/site.js" defer></script>
   </body>
 </html>

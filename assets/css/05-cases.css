@@ -1,47 +1,168 @@
-.detail-layer {
+.case-study {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.16);
+}
+
+.case-study::before {
+  content: "";
+  z-index: -1;
   pointer-events: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  z-index: 1;
-  border: 0;
-  margin: 0;
-  display: block;
   position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, currentColor 1px, transparent 1.2px);
+  background-size: 18px 18px;
+  opacity: 0.045;
 }
-.detail-vela {
-  width: 58.3333%;
-  height: 8.48656%;
-  top: 22.7396%;
-  left: 41.6667%;
+
+.case-study--dark {
+  background: var(--black);
+  color: var(--white);
 }
-.detail-razdacha {
-  width: 51.6667%;
-  height: 9.35698%;
-  top: 31.7702%;
-  left: 3.33333%;
+
+.case-study--light {
+  background: var(--white);
+  color: var(--black);
 }
-.detail-synth {
-  width: 56.6667%;
-  height: 9.03057%;
-  top: 45.1529%;
-  left: 43.3333%;
+
+.case-study__inner {
+  min-height: clamp(900px, 83vw, 1240px);
+  padding-block: clamp(76px, 8vw, 124px);
+  display: grid;
+  grid-template-columns: minmax(330px, 0.82fr) minmax(520px, 1.18fr);
+  align-items: center;
+  gap: clamp(42px, 6vw, 94px);
 }
-.detail-mebel {
-  width: 55%;
-  height: 7.61615%;
-  top: 56.0331%;
-  left: 0;
+
+.case-study--media-left .case-study__copy {
+  order: 2;
 }
-.detail-bonton {
-  width: 58.3333%;
-  height: 9.24818%;
-  top: 69.0893%;
-  left: 41.6667%;
+
+.case-study--media-left .case-study__media {
+  order: 1;
 }
-.detail-shturman {
-  width: 53.3333%;
-  height: 7.18094%;
-  top: 81.8192%;
-  left: 3.33333%;
+
+.case-study__copy {
+  z-index: 2;
+  position: relative;
+}
+
+.case-study__header {
+  margin-bottom: clamp(46px, 5vw, 76px);
+}
+
+.case-study__header h3 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: clamp(31px, 3.2vw, 50px);
+  font-weight: 780;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+}
+
+.case-study__header h3::after {
+  content: "";
+  width: 2px;
+  height: 1em;
+  display: inline-block;
+  background: var(--pink);
+}
+
+.case-study__header h3 span {
+  font-weight: 700;
+}
+
+.case-study__header > p {
+  max-width: 620px;
+  margin-top: 18px;
+  font-size: clamp(16px, 1.6vw, 23px);
+  line-height: 1.35;
+}
+
+.case-role {
+  margin-bottom: clamp(42px, 5vw, 72px);
+  display: grid;
+  gap: 5px;
+  font-size: clamp(18px, 1.7vw, 24px);
+}
+
+.case-role strong,
+.case-point h4 {
+  color: var(--pink);
+  font-weight: 760;
+}
+
+.case-point {
+  margin-top: clamp(32px, 4vw, 58px);
+  padding: clamp(24px, 2.5vw, 36px) clamp(28px, 3.6vw, 54px);
+  position: relative;
+  border: 1px solid rgba(255, 105, 186, 0.78);
+  border-radius: 48% / 28%;
+  text-align: center;
+}
+
+.case-point h4 {
+  margin-top: -1.9em;
+  margin-bottom: 14px;
+  font-size: clamp(18px, 1.7vw, 25px);
+  line-height: 1;
+}
+
+.case-study--dark .case-point h4 {
+  background: var(--black);
+}
+
+.case-study--light .case-point h4 {
+  background: var(--white);
+}
+
+.case-point h4 {
+  width: max-content;
+  max-width: 90%;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+
+.case-point p {
+  font-size: clamp(15px, 1.42vw, 20px);
+  line-height: 1.35;
+}
+
+.case-study__media {
+  z-index: 1;
+  min-width: 0;
+  position: relative;
+  line-height: 0;
+}
+
+.case-study__media::before {
+  content: "";
+  z-index: -1;
+  width: 74%;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 14%;
+  left: 13%;
+  border-radius: 50%;
+  background: rgba(255, 0, 140, 0.11);
+  filter: blur(46px);
+}
+
+.case-study__media img {
+  width: 100%;
+  max-height: 1050px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 38px rgba(0, 0, 0, 0.18));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
+}
+
+.case-study__media--berry img {
+  max-height: 780px;
+  -webkit-mask-image: none;
+  mask-image: none;
 }

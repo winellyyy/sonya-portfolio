@@ -1,37 +1,37 @@
-# Sonya — UX/UI Designer (лендинг)
+# Sonya — UX/UI Designer
 
-Статическая страница. Без сборки: открывается как есть — `open index.html`
-(или `python3 -m http.server` в корне, если нужен http).
+Статическое портфолио без сборки. Для локального просмотра запустите HTTP-сервер в корне проекта:
+
+```bash
+python3 -m http.server 4173
+```
 
 ## Структура
 
-```
-index.html          разметка (275 строк, отформатирована)
+```text
+index.html          семантическая HTML-разметка и весь редактируемый текст
 assets/
-  css/              стили, подключаются по порядку — каскад имеет значение
-    00-reset.css      Tailwind v4 reset + @layer theme (генерируется, руками не править)
-    01-base.css       :root переменные, html/body/a/::selection, @keyframes
-    02-header.css     .site-header, .brand, .desktop-nav, .header-cta
-    03-portfolio.css  .portfolio-canvas, .portfolio-chunk (полотно скриншотов)
-    04-about.css      .about-backdrop, .about-card-{skills,experience,education}
-    05-cases.css      .detail-layer / .detail-* (устройства с кейсами)
-    06-contacts.css   .contact-link-*, .page-anchor / .anchor-*
-    07-buttons.css    .hero-work-link, .contact-hotspot, .back-to-cases
-    08-responsive.css @media (width<=820px) + prefers-reduced-motion
-  img/              все картинки
-.prettierrc.json    форматирование: npx prettier --write .
+  css/
+    00-reset.css      базовый reset
+    01-base.css       переменные, типографика, оболочки секций и текстуры
+    02-header.css     шапка и навигация
+    03-portfolio.css  главный экран и заголовок кейсов
+    04-about.css      блок «Обо мне», анимация и компоненты карточек
+    05-cases.css      повторно используемые компоненты кейсов
+    06-contacts.css   контакты
+    07-buttons.css    кнопки и кнопка возврата к кейсам
+    08-responsive.css адаптивность и reduced motion
+  img/                фотографии и изображения проектов
+  media/              WebM/MP4-анимация цветов и постер
+  js/site.js           синхронизация цветов со скроллом и кнопка возврата
 ```
 
-## Что убрано из исходного сохранения страницы
+## Редактирование
 
-Страница была сохранена из React/RSC-приложения. Удалён мёртвый код,
-который локально ничего не делал:
+- Тексты главного экрана, карточек, кейсов и контактов находятся напрямую в `index.html`.
+- Карточки «Обо мне» используют компонентный класс `.fact-card`.
+- Каждый кейс — самостоятельный компонент `.case-study` с блоками `.case-role` и `.case-point`.
+- Длинные файлы `01.jpg`–`05.jpg` оставлены только как резервные визуальные исходники и не подключены к странице.
+- Раскрытие цветов привязано к позиции блока «Обо мне» в `assets/js/site.js`.
 
-- inline RSC-payload (`__VINEXT_RSC_CHUNKS__` и т.п.) — дублировал весь DOM в JSON;
-- `<link rel="modulepreload">` на `/assets/*.js` — этих файлов в сохранении нет;
-- Cloudflare bot-detection скрипт и его скрытый iframe (`saved_resource.html`).
-
-Известное следствие: кнопка `.back-to-cases` (стрелка «наверх») показывается
-только с классом `is-visible`, который раньше ставил React-компонент. Сейчас
-JS нет вообще, поэтому кнопка не появляется — как и до чистки. Оживляется
-несколькими строками ванильного JS, если понадобится.
+Форматирование проекта: `npx prettier --write .`
