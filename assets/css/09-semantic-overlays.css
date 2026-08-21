@@ -385,7 +385,7 @@
 }
 
 .cases-heading > * {
-  transform: translateY(1.5cqw);
+  transform: translateY(2cqw);
 }
 
 .cases-index {
@@ -408,7 +408,7 @@
 }
 
 .cases-heading p {
-  margin-top: 0.45cqw;
+  margin-top: 0.95cqw;
   margin-left: 5cqw;
   color: #ff008c;
   font-family: "Mak", Georgia, serif;
@@ -436,16 +436,16 @@
 }
 
 .case-copy.surface-dark {
-  --panel-dot: #ffffff12;
+  --panel-dot: #ffffff18;
 }
 
 .case-copy.surface-light {
-  --panel-dot: #9e5d7f16;
+  --panel-dot: #9e5d7f1c;
 }
 
 .case-berry::before { top: 119cqw; left: 52%; width: 46%; height: 62cqw; }
-.case-vela::before { top: 192cqw; left: 2%; width: 50%; height: 96cqw; }
-.case-razdacha::before { top: 279cqw; left: 50%; width: 48%; height: 81cqw; }
+.case-vela::before { top: 192cqw; left: 2%; width: 50%; height: 65cqw; }
+.case-razdacha::before { top: 279cqw; left: 50%; width: 48%; height: 75cqw; }
 .case-synth::before { top: 370cqw; left: 2%; width: 49%; height: 66cqw; }
 .case-mebel::before { top: 456cqw; left: 50%; width: 48%; height: 79cqw; }
 .case-bonton::before { top: 551cqw; left: 2%; width: 50%; height: 77cqw; }
@@ -469,7 +469,6 @@
   font-weight: 600;
   letter-spacing: -0.045em;
   line-height: 1;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -483,9 +482,27 @@
   vertical-align: -0.22cqw;
 }
 
+.case-vela .case-header h3::after,
+.case-synth .case-header h3::after,
+.case-bonton .case-header h3::after {
+  display: none;
+}
+
+.case-vela .case-header h3::before,
+.case-synth .case-header h3::before,
+.case-bonton .case-header h3::before {
+  content: "";
+  display: inline-block;
+  width: 0.055cqw;
+  height: 2.2cqw;
+  margin-right: 0.45cqw;
+  background: #ff008c;
+  vertical-align: -0.22cqw;
+}
+
 .case-header p {
   margin-top: 0.75cqw;
-  font-size: 1.08cqw;
+  font-size: 1.22cqw;
   font-weight: 400;
   line-height: 1.32;
 }
@@ -496,14 +513,14 @@
   padding: 0.32cqw 0.45cqw;
   background: var(--surface);
   box-shadow: 0 0 0.4cqw 0.35cqw var(--surface);
-  font-size: 1.1cqw;
+  font-size: 1.2cqw;
   line-height: 1.1;
 }
 
 .case-role strong,
 .case-point h4 {
   color: #ff008c;
-  font-size: 1.22cqw;
+  font-size: 1.55cqw;
   font-weight: 600;
 }
 
@@ -516,7 +533,7 @@
   background: var(--surface);
   border: 0.055cqw solid #ff4da477;
   border-radius: 50%;
-  font-size: 1.02cqw;
+  font-size: 1.16cqw;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -534,6 +551,13 @@
   right: 19%;
 }
 
+.case-vela .case-task h4,
+.case-synth .case-task h4,
+.case-bonton .case-task h4 {
+  right: auto;
+  left: 13%;
+}
+
 .detail-berry {
   position: absolute;
   z-index: 4;
@@ -545,40 +569,43 @@
 }
 
 .case-berry .case-header { top: 122.75cqw; left: 70.3%; width: 23%; }
-.case-berry .case-header p { position: relative; left: -10cqw; width: 33cqw; text-align: center; }
+.case-berry .case-header p { position: relative; left: -12.1cqw; width: 33cqw; text-align: center; font-size: 1.15cqw; transform: scaleX(1.08); transform-origin: center top; }
 .case-berry .case-role { top: 138.1cqw; left: 54.3%; width: 19%; }
 .case-berry .case-task { top: 149.35cqw; left: 58.8%; width: 32.8%; }
 .case-berry .case-outcome { top: 168.2cqw; left: 52.8%; width: 39.5%; min-height: 8.5cqw; }
 
-.case-vela .case-header { top: 196.3cqw; left: 10.8%; width: 29%; }
-.case-vela .case-role { top: 223.5cqw; left: 33.1%; width: 19%; }
-.case-vela .case-task { top: 244.2cqw; left: 13.6%; width: 36.2%; }
-.case-vela .case-outcome { top: 278.8cqw; left: 10%; width: 37.6%; min-height: 7.5cqw; }
+.case-vela .case-header { top: 195.5cqw; left: 10.8%; width: 29%; }
+.case-vela .case-role { top: 210.75cqw; left: 33.1%; width: 19%; }
+.case-vela .case-task { top: 221.6cqw; left: 13.6%; width: 36.2%; }
+.case-vela .case-outcome { top: 242.15cqw; left: 10%; width: 37.6%; min-height: 7.5cqw; }
 
-.case-razdacha .case-header { top: 282.6cqw; left: 70.6%; width: 25%; text-align: center; }
-.case-razdacha .case-role { top: 298.7cqw; left: 55.8%; width: 20%; }
-.case-razdacha .case-task { top: 319.3cqw; left: 56.9%; width: 34.7%; }
-.case-razdacha .case-outcome { top: 341.2cqw; left: 50.3%; width: 42.5%; min-height: 10.2cqw; }
+.case-razdacha .case-header { top: 279.3cqw; left: 67.6%; width: 25%; text-align: center; }
+.case-razdacha .case-header p { position: relative; left: -3.4cqw; width: 30cqw; }
+.case-razdacha .case-role { top: 296.25cqw; left: 55.8%; width: 20%; }
+.case-razdacha .case-task { top: 314.6cqw; left: 56.9%; width: 34.7%; }
+.case-razdacha .case-outcome { top: 337cqw; left: 50.3%; width: 42.5%; min-height: 10.2cqw; }
 
-.case-synth .case-header { top: 375cqw; left: 10.8%; width: 28%; }
-.case-synth .case-role { top: 389.5cqw; left: 30%; width: 20%; }
+.case-synth .case-header { top: 373.8cqw; left: 10.8%; width: 28%; }
+.case-synth .case-role { top: 388.45cqw; left: 30%; width: 20%; }
 .case-synth .case-task { top: 401.6cqw; left: 13.5%; width: 35%; }
 .case-synth .case-outcome { top: 421.5cqw; left: 11.4%; width: 36.7%; min-height: 7.2cqw; }
 
-.case-mebel .case-header { top: 460.4cqw; left: 65.4%; width: 28%; text-align: center; }
-.case-mebel .case-role { top: 477.2cqw; left: 59.8%; width: 20%; }
-.case-mebel .case-task { top: 494.7cqw; left: 55.4%; width: 36.1%; }
-.case-mebel .case-outcome { top: 516.8cqw; left: 52.7%; width: 39.2%; min-height: 10.4cqw; }
+.case-mebel .case-header { top: 457.6cqw; left: 62.4%; width: 28%; text-align: center; }
+.case-mebel .case-header p { position: relative; left: -2.9cqw; width: 33cqw; }
+.case-mebel .case-role { top: 475.27cqw; left: 59.8%; width: 20%; }
+.case-mebel .case-task { top: 491.65cqw; left: 55.4%; width: 36.1%; }
+.case-mebel .case-outcome { top: 513.5cqw; left: 52.7%; width: 39.2%; min-height: 10.4cqw; }
 
-.case-bonton .case-header { top: 556.2cqw; left: 10.8%; width: 29%; }
-.case-bonton .case-role { top: 569.8cqw; left: 30.6%; width: 20%; }
-.case-bonton .case-task { top: 588cqw; left: 13.7%; width: 35%; }
+.case-bonton .case-header { top: 554.57cqw; left: 10.8%; width: 29%; }
+.case-bonton .case-role { top: 568.9cqw; left: 30.6%; width: 20%; }
+.case-bonton .case-task { top: 587.4cqw; left: 13.7%; width: 35%; }
 .case-bonton .case-outcome { top: 612.8cqw; left: 9.4%; width: 40%; min-height: 9.4cqw; }
 
-.case-shturman .case-header { top: 653.1cqw; left: 66.1%; width: 27%; text-align: center; }
-.case-shturman .case-role { top: 668.5cqw; left: 58.6%; width: 21%; }
-.case-shturman .case-task { top: 685cqw; left: 57.9%; width: 34.8%; }
-.case-shturman .case-outcome { top: 704.4cqw; left: 53.8%; width: 38.6%; min-height: 9.2cqw; }
+.case-shturman .case-header { top: 651cqw; left: 63.9%; width: 27%; text-align: center; }
+.case-shturman .case-header p { position: relative; left: -3.7cqw; width: 32cqw; }
+.case-shturman .case-role { top: 666.94cqw; left: 58.6%; width: 21%; }
+.case-shturman .case-task { top: 679.7cqw; left: 57.9%; width: 34.8%; }
+.case-shturman .case-outcome { top: 702cqw; left: 53.8%; width: 38.6%; min-height: 9.2cqw; }
 
 .semantic-contacts {
   position: absolute;
@@ -591,10 +618,10 @@
   content: "";
   position: absolute;
   z-index: 0;
-  top: 728cqw;
-  left: 15.5%;
-  width: 43%;
-  height: 43cqw;
+  top: 731.5cqw;
+  left: 13%;
+  width: 37%;
+  height: 37cqw;
   background:
     radial-gradient(circle, #9e5d7f16 0 0.035cqw, transparent 0.06cqw) 0 0 / 0.78cqw 0.78cqw,
     var(--surface);
@@ -606,9 +633,9 @@
   position: absolute;
   z-index: 1;
   top: 734.3cqw;
-  left: 19.5%;
-  width: 37%;
-  font-size: 3.35cqw;
+  left: 16.9%;
+  width: 41%;
+  font-size: 2.6cqw;
   font-weight: 600;
   letter-spacing: -0.055em;
   line-height: 1.05;
@@ -617,12 +644,12 @@
 .semantic-contacts address {
   position: absolute;
   z-index: 1;
-  top: 746.9cqw;
-  left: 19.3%;
+  top: 743.9cqw;
+  left: 17.2%;
   display: grid;
   gap: 1.3cqw;
   width: 31%;
-  font-size: 2.05cqw;
+  font-size: 1.7cqw;
   font-style: normal;
   font-weight: 500;
   line-height: 1;
@@ -647,10 +674,10 @@
 .semantic-contacts .semantic-button {
   position: absolute;
   z-index: 1;
-  top: 758.2cqw;
-  left: 19.4%;
-  width: 22.5%;
-  height: 4.8cqw;
+  top: 754.7cqw;
+  left: 17%;
+  width: 19.7%;
+  height: 3.65cqw;
 }
 
 @media (max-width: 820px) {
