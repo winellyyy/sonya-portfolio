@@ -54,6 +54,7 @@
   text-shadow:
     0 0 0.07cqw var(--surface, #08080b),
     0 0 0.12cqw var(--surface, #08080b);
+  display: none;
 }
 
 .erase-ink > span {
