@@ -98,8 +98,32 @@
   --surface: #08080b;
 }
 
+.hero-clean-patch {
+  position: absolute;
+  z-index: 0;
+  height: auto;
+  pointer-events: none;
+}
+
+.hero-clean-patch-name {
+  top: 8.0556cqw;
+  left: 11.6667%;
+  width: 17.2222%;
+}
+
+.hero-clean-patch-copy {
+  top: 28.8889cqw;
+  left: 61.3889%;
+  width: 32.2222%;
+}
+
+.semantic-hero .source-mask {
+  display: none;
+}
+
 .hero-name {
   position: absolute;
+  z-index: 1;
   top: 8.8cqw;
   left: 12.4%;
   width: 24%;
@@ -115,6 +139,7 @@
 
 .hero-copy {
   position: absolute;
+  z-index: 1;
   inset: 0;
 }
 
@@ -574,6 +599,3 @@
     object-position: center;
   }
 }
-
-/* temporary visual QA */
-.portfolio-artwork{opacity:0!important;}
