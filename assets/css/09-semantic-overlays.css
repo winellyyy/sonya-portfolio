@@ -410,6 +410,40 @@
   position: absolute;
   z-index: 3;
   inset: 0;
+  isolation: isolate;
+}
+
+.case-copy::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  background:
+    radial-gradient(circle, var(--panel-dot, #ffffff12) 0 0.035cqw, transparent 0.06cqw) 0 0 / 0.78cqw 0.78cqw,
+    var(--surface);
+  box-shadow: 0 0 1.4cqw 1.15cqw var(--surface);
+  pointer-events: none;
+}
+
+.case-copy.surface-dark {
+  --panel-dot: #ffffff12;
+}
+
+.case-copy.surface-light {
+  --panel-dot: #9e5d7f16;
+}
+
+.case-berry::before { top: 119cqw; left: 52%; width: 46%; height: 62cqw; }
+.case-vela::before { top: 192cqw; left: 2%; width: 50%; height: 96cqw; }
+.case-razdacha::before { top: 279cqw; left: 50%; width: 48%; height: 81cqw; }
+.case-synth::before { top: 370cqw; left: 2%; width: 49%; height: 66cqw; }
+.case-mebel::before { top: 456cqw; left: 50%; width: 48%; height: 79cqw; }
+.case-bonton::before { top: 551cqw; left: 2%; width: 50%; height: 77cqw; }
+.case-shturman::before { top: 648cqw; left: 50%; width: 48%; height: 74cqw; }
+
+.case-copy > .case-header,
+.case-copy > .case-role,
+.case-copy > .case-point {
+  z-index: 1;
 }
 
 .case-header,
@@ -538,10 +572,27 @@
   position: absolute;
   z-index: 5;
   inset: 0;
+  isolation: isolate;
+}
+
+.semantic-contacts::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 728cqw;
+  left: 15.5%;
+  width: 43%;
+  height: 43cqw;
+  background:
+    radial-gradient(circle, #9e5d7f16 0 0.035cqw, transparent 0.06cqw) 0 0 / 0.78cqw 0.78cqw,
+    var(--surface);
+  box-shadow: 0 0 1.4cqw 1.15cqw var(--surface);
+  pointer-events: none;
 }
 
 .semantic-contacts h2 {
   position: absolute;
+  z-index: 1;
   top: 734.3cqw;
   left: 19.5%;
   width: 37%;
@@ -553,6 +604,7 @@
 
 .semantic-contacts address {
   position: absolute;
+  z-index: 1;
   top: 746.9cqw;
   left: 19.3%;
   display: grid;
@@ -582,6 +634,7 @@
 
 .semantic-contacts .semantic-button {
   position: absolute;
+  z-index: 1;
   top: 758.2cqw;
   left: 19.4%;
   width: 22.5%;
