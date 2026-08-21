@@ -66,12 +66,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.2cqw;
+  gap: 1.3cqw;
   overflow: hidden;
   color: #fff;
   background: linear-gradient(105deg, #c60062 0%, #ff168c 52%, #ff66b9 100%);
   border-radius: 999px;
-  font-size: 1.45cqw;
+  font-size: 1.2cqw;
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
@@ -93,12 +93,12 @@
 
 .hero-name {
   position: absolute;
-  top: 7.9cqw;
-  left: 10.8%;
+  top: 8.6cqw;
+  left: 12.2%;
   width: 24%;
   color: #ff008c;
   font-family: "Mak", Georgia, serif;
-  font-size: 7.9cqw;
+  font-size: 5.35cqw;
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.08em;
@@ -111,12 +111,12 @@
 
 .hero-copy h1 {
   position: absolute;
-  top: 28.8cqw;
+  top: 29.8cqw;
   left: 62.45%;
   width: 31%;
   color: #ff008c;
   font-family: "Mak", Georgia, serif;
-  font-size: 5.95cqw;
+  font-size: 3.85cqw;
   font-weight: 700;
   line-height: 0.95;
   white-space: nowrap;
@@ -128,7 +128,7 @@
   left: 62.55%;
   width: 28.5%;
   color: #fff;
-  font-size: 1.72cqw;
+  font-size: 1.12cqw;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -165,7 +165,7 @@
 
 .about-heading h2 {
   color: #ff008c;
-  font-size: 5.05cqw;
+  font-size: 6.35cqw;
   font-weight: 700;
   letter-spacing: -0.07em;
   line-height: 0.9;
@@ -175,7 +175,7 @@
   margin-top: -0.15cqw;
   margin-left: 15.3cqw;
   font-family: "Mak", Georgia, serif;
-  font-size: 2.65cqw;
+  font-size: 1.82cqw;
   font-weight: 700;
   line-height: 0.9;
   white-space: nowrap;
@@ -343,7 +343,7 @@
   margin-top: 0.65cqw;
   color: #ff008c;
   font-family: "Mak", Georgia, serif;
-  font-size: 1.6cqw;
+  font-size: 1.1cqw;
   font-weight: 700;
   line-height: 1;
 }
