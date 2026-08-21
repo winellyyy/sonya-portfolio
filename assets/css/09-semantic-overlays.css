@@ -39,13 +39,14 @@
 .erase-ink {
   position: relative;
   isolation: isolate;
+  display: grid;
 }
 
 .erase-ink::before {
   content: attr(data-erase);
-  position: absolute;
+  position: relative;
   z-index: 0;
-  inset: 0;
+  grid-area: 1 / 1;
   color: var(--surface, #08080b);
   font: inherit;
   letter-spacing: inherit;
@@ -54,12 +55,12 @@
   text-shadow:
     0 0 0.07cqw var(--surface, #08080b),
     0 0 0.12cqw var(--surface, #08080b);
-  display: none;
 }
 
 .erase-ink > span {
   position: relative;
   z-index: 1;
+  grid-area: 1 / 1;
 }
 
 .semantic-button {
