@@ -106,10 +106,12 @@
   width: 24%;
   color: #ff008c;
   font-family: "Mak", Georgia, serif;
-  font-size: 5.2cqw;
+  font-size: 6.22cqw;
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.08em;
+  transform: scaleX(0.81);
+  transform-origin: left top;
 }
 
 .hero-copy {
@@ -124,11 +126,11 @@
   width: 31%;
   color: #ff008c;
   font-family: "Mak", Georgia, serif;
-  font-size: 3.85cqw;
+  font-size: 4.04cqw;
   font-weight: 700;
   line-height: 0.95;
   white-space: nowrap;
-  transform: scaleX(0.72);
+  transform: scaleX(0.685);
   transform-origin: left top;
 }
 
@@ -138,7 +140,7 @@
   left: 62.55%;
   width: 28.5%;
   color: #fff;
-  font-size: 1.12cqw;
+  font-size: 1.04cqw;
   font-weight: 500;
   line-height: 1.2;
 }
