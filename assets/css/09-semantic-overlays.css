@@ -50,7 +50,7 @@
   font: inherit;
   letter-spacing: inherit;
   line-height: inherit;
-  white-space: normal;
+  white-space: pre-line;
   text-shadow:
     0 0 0.07cqw var(--surface, #08080b),
     0 0 0.12cqw var(--surface, #08080b);
@@ -93,12 +93,12 @@
 
 .hero-name {
   position: absolute;
-  top: 8.6cqw;
-  left: 12.2%;
+  top: 8.8cqw;
+  left: 12.4%;
   width: 24%;
   color: #ff008c;
   font-family: "Mak", Georgia, serif;
-  font-size: 5.35cqw;
+  font-size: 5.2cqw;
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.08em;
@@ -111,7 +111,7 @@
 
 .hero-copy h1 {
   position: absolute;
-  top: 29.8cqw;
+  top: 30.15cqw;
   left: 62.45%;
   width: 31%;
   color: #ff008c;
@@ -120,6 +120,8 @@
   font-weight: 700;
   line-height: 0.95;
   white-space: nowrap;
+  transform: scaleX(0.72);
+  transform-origin: left top;
 }
 
 .hero-copy > p {
@@ -165,7 +167,7 @@
 
 .about-heading h2 {
   color: #ff008c;
-  font-size: 6.35cqw;
+  font-size: 6.8cqw;
   font-weight: 700;
   letter-spacing: -0.07em;
   line-height: 0.9;
@@ -175,7 +177,7 @@
   margin-top: -0.15cqw;
   margin-left: 15.3cqw;
   font-family: "Mak", Georgia, serif;
-  font-size: 1.82cqw;
+  font-size: 1.91cqw;
   font-weight: 700;
   line-height: 0.9;
   white-space: nowrap;
