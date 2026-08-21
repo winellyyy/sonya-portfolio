@@ -58,6 +58,7 @@
   display: block;
   align-self: start;
   justify-self: start;
+  visibility: hidden;
 }
 
 .erase-ink > span {
@@ -553,6 +554,3 @@
     object-position: center;
   }
 }
-
-/* temporary visual QA */
-.portfolio-artwork{opacity:0!important;}
