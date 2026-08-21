@@ -43,31 +43,29 @@
 }
 
 .erase-ink::before {
-  content: attr(data-erase);
+  content: none;
+}
+
+.erase-ink > .source-mask,
+.erase-ink > .editable-copy {
   position: relative;
-  z-index: 0;
   grid-area: 1 / 1;
+  display: block;
+  align-self: start;
+  justify-self: start;
+}
+
+.erase-ink > .source-mask {
+  z-index: 0;
   color: var(--surface, #08080b);
-  font: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  white-space: pre-line;
   text-shadow:
     0 0 0.07cqw var(--surface, #08080b),
     0 0 0.12cqw var(--surface, #08080b);
-  display: block;
-  align-self: start;
-  justify-self: start;
-  visibility: hidden;
+  pointer-events: none;
 }
 
-.erase-ink > span {
-  position: relative;
+.erase-ink > .editable-copy {
   z-index: 1;
-  grid-area: 1 / 1;
-  display: block;
-  align-self: start;
-  justify-self: start;
 }
 
 .semantic-button {
@@ -131,8 +129,28 @@
   font-weight: 700;
   line-height: 0.95;
   white-space: nowrap;
-  transform: scaleX(0.685);
+}
+
+.hero-copy h1 > .hero-title-layer {
+  position: relative;
+  width: 31cqw;
+  height: 4.2cqw;
+}
+
+.hero-title-layer > span {
+  position: absolute;
+  top: 0;
   transform-origin: left top;
+}
+
+.hero-title-ux {
+  left: 0;
+  transform: scaleX(0.815);
+}
+
+.hero-title-role {
+  left: 10.75cqw;
+  transform: scaleX(0.613);
 }
 
 .hero-copy > p {
@@ -554,6 +572,3 @@
     object-position: center;
   }
 }
-
-/* temporary visual QA */
-.portfolio-artwork{opacity:0!important;}
