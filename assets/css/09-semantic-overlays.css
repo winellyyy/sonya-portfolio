@@ -574,3 +574,6 @@
     object-position: center;
   }
 }
+
+/* temporary visual QA */
+.portfolio-artwork{opacity:0!important;}
