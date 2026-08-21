@@ -137,9 +137,13 @@
   transform-origin: left top;
 }
 
-.hero-name > .editable-copy,
+.hero-name > .editable-copy {
+  -webkit-text-stroke: 0.11cqw currentColor;
+  paint-order: stroke fill;
+}
+
 .hero-title-layer.editable-copy {
-  -webkit-text-stroke: 0.045cqw currentColor;
+  -webkit-text-stroke: 0.075cqw currentColor;
   paint-order: stroke fill;
 }
 
