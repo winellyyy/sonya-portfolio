@@ -579,8 +579,8 @@
 .case-vela .case-task { top: 221.6cqw; left: 13.6%; width: 36.2%; }
 .case-vela .case-outcome { top: 242.15cqw; left: 10%; width: 37.6%; min-height: 7.5cqw; }
 
-.case-razdacha .case-header { top: 279.3cqw; left: 67.6%; width: 25%; text-align: center; }
-.case-razdacha .case-header p { position: relative; left: -3.4cqw; width: 30cqw; }
+.case-razdacha .case-header { top: 279.3cqw; left: 66.9%; width: 25%; text-align: center; }
+.case-razdacha .case-header p { position: relative; left: -7.5cqw; width: 34cqw; margin-top: 2.31cqw; }
 .case-razdacha .case-role { top: 296.25cqw; left: 55.8%; width: 20%; }
 .case-razdacha .case-task { top: 314.6cqw; left: 56.9%; width: 34.7%; }
 .case-razdacha .case-outcome { top: 337cqw; left: 50.3%; width: 42.5%; min-height: 10.2cqw; }
@@ -591,7 +591,7 @@
 .case-synth .case-outcome { top: 421.5cqw; left: 11.4%; width: 36.7%; min-height: 7.2cqw; }
 
 .case-mebel .case-header { top: 457.6cqw; left: 62.4%; width: 28%; text-align: center; }
-.case-mebel .case-header p { position: relative; left: -2.9cqw; width: 33cqw; }
+.case-mebel .case-header p { position: relative; left: -2.9cqw; width: 33cqw; margin-top: 2cqw; }
 .case-mebel .case-role { top: 475.27cqw; left: 59.8%; width: 20%; }
 .case-mebel .case-task { top: 491.65cqw; left: 55.4%; width: 36.1%; }
 .case-mebel .case-outcome { top: 513.5cqw; left: 52.7%; width: 39.2%; min-height: 10.4cqw; }
@@ -602,7 +602,7 @@
 .case-bonton .case-outcome { top: 612.8cqw; left: 9.4%; width: 40%; min-height: 9.4cqw; }
 
 .case-shturman .case-header { top: 651cqw; left: 63.9%; width: 27%; text-align: center; }
-.case-shturman .case-header p { position: relative; left: -3.7cqw; width: 32cqw; }
+.case-shturman .case-header p { position: relative; left: -4.5cqw; width: 32cqw; margin-top: 1.8cqw; }
 .case-shturman .case-role { top: 666.94cqw; left: 58.6%; width: 21%; }
 .case-shturman .case-task { top: 679.7cqw; left: 57.9%; width: 34.8%; }
 .case-shturman .case-outcome { top: 702cqw; left: 53.8%; width: 38.6%; min-height: 9.2cqw; }
