@@ -14,6 +14,7 @@
     <link rel="preload" href="./assets/img/skills.png" as="image" />
     <link rel="preload" href="./assets/img/experience.png" as="image" />
     <link rel="preload" href="./assets/img/education.png" as="image" />
+    <link rel="preload" href="./assets/media/flower-bloom-poster.webp" as="image" />
     <!-- Стили: порядок подключения важен (каскад) -->
     <link rel="stylesheet" href="./assets/css/00-reset.css" />
     <link rel="stylesheet" href="./assets/css/01-base.css" />
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="./assets/css/06-contacts.css" />
     <link rel="stylesheet" href="./assets/css/07-buttons.css" />
     <link rel="stylesheet" href="./assets/css/08-responsive.css" />
+    <link rel="preload" href="./assets/img/device-berry.webp" as="image" />
     <link rel="preload" href="./assets/img/device-vela.webp" as="image" />
     <link rel="preload" href="./assets/img/device-razdacha.webp" as="image" />
     <link rel="preload" href="./assets/img/device-synth.webp" as="image" />
@@ -131,7 +133,31 @@
           loading="eager"
           decoding="async"
           draggable="false"
-        /><span class="about-card about-card-skills" aria-hidden="true"
+        /><span class="about-bloom about-bloom-left" aria-hidden="true"
+          ><video
+            class="about-bloom-video"
+            muted
+            playsinline
+            preload="metadata"
+            poster="./assets/media/flower-bloom-poster.webp"
+            disablepictureinpicture
+            disableremoteplayback
+            tabindex="-1"
+          >
+            <source src="./assets/media/flower-bloom.webm" type="video/webm" /></video></span
+        ><span class="about-bloom about-bloom-right" aria-hidden="true"
+          ><video
+            class="about-bloom-video"
+            muted
+            playsinline
+            preload="metadata"
+            poster="./assets/media/flower-bloom-poster.webp"
+            disablepictureinpicture
+            disableremoteplayback
+            tabindex="-1"
+          >
+            <source src="./assets/media/flower-bloom.webm" type="video/webm" /></video></span
+        ><span class="about-card about-card-skills" aria-hidden="true"
           ><img
             src="./assets/img/skills.png"
             width="627"
@@ -158,7 +184,17 @@
             loading="eager"
             decoding="async"
             draggable="false" /></span
+        ><span class="detail-berry-cover" aria-hidden="true"></span
         ><img
+          class="detail-layer detail-berry"
+          src="./assets/img/device-berry.webp"
+          width="2785"
+          height="2622"
+          alt=""
+          loading="eager"
+          decoding="async"
+          draggable="false"
+        /><img
           class="detail-layer detail-vela"
           src="./assets/img/device-vela.webp"
           width="4200"
@@ -260,5 +296,6 @@
         ><span aria-hidden="true">↑</span></a
       >
     </main>
+    <script src="./assets/js/about-bloom.js" defer></script>
   </body>
 </html>
