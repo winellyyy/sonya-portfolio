@@ -18,7 +18,10 @@ assets/
     06-contacts.css   .contact-link-*, .page-anchor / .anchor-*
     07-buttons.css    .hero-work-link, .contact-hotspot, .back-to-cases
     08-responsive.css @media (width<=820px) + prefers-reduced-motion
+  js/
+    about-bloom.js    синхронизирует раскрытие цветов с прокруткой
   img/              все картинки
+  media/            оптимизированная WebM-анимация цветов и постер
 .prettierrc.json    форматирование: npx prettier --write .
 ```
 
