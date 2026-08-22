@@ -11,56 +11,6 @@
   top: 7.97921%;
   left: 22.7778%;
 }
-.about-bloom {
-  z-index: 1;
-  pointer-events: none;
-  isolation: isolate;
-  aspect-ratio: 1;
-  line-height: 0;
-  display: block;
-  position: absolute;
-}
-.about-bloom:before {
-  content: "";
-  z-index: -1;
-  background: radial-gradient(
-    ellipse at center,
-    #fafafa 0 62%,
-    #fafafaf5 73%,
-    #fafafab8 83%,
-    #fafafa00 100%
-  );
-  filter: blur(0.3vw);
-  position: absolute;
-  inset: -7%;
-  transform: scale(1.08);
-}
-.about-bloom-video {
-  pointer-events: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  filter: drop-shadow(0 0.75vw 1.2vw #5f18331a);
-}
-.about-bloom-left {
-  width: 41.5%;
-  top: 7.5%;
-  left: -12.5%;
-  transform: rotate(-2deg);
-}
-.about-bloom-right {
-  width: 38.5%;
-  top: 7.62%;
-  right: -11.5%;
-  transform: rotate(1.5deg);
-}
-.about-bloom-right .about-bloom-video {
-  transform: scaleX(-1);
-}
 .about-card {
   z-index: 2;
   /* без drop-shadow: тень карточек уже нарисована на полотне 01.jpg */

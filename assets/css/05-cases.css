@@ -9,30 +9,6 @@
   display: block;
   position: absolute;
 }
-.detail-berry {
-  z-index: 2;
-  width: 53%;
-  height: 6.55%;
-  top: 14.868%;
-  left: -0.5%;
-}
-.detail-berry-cover {
-  z-index: 1;
-  pointer-events: none;
-  background: radial-gradient(
-    ellipse at 45% 47%,
-    #08080b 0 68%,
-    #08080bf7 77%,
-    #08080b00 100%
-  );
-  filter: blur(0.5vw);
-  width: 58.3333%;
-  height: 6.89%;
-  display: block;
-  position: absolute;
-  top: 14.505%;
-  left: -1.39%;
-}
 .detail-vela {
   width: 58.3333%;
   height: 8.48656%;

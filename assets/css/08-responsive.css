@@ -26,9 +26,6 @@
   .about-card:hover {
     transform: translate(0) scale(1);
   }
-  .about-bloom-video {
-    filter: none;
-  }
   *,
   :before,
   :after {
